@@ -15,7 +15,7 @@ Feature: Core Functionality - Smoke Test
 
   Xing and Viet are peers. The fourth scenario covers the sixth core functionality
   of the app: 6. A user cannot delete other records than his own.
-  @skip
+
   Scenario: Kumar user can perform core functionality 1. 2. 3.
     Given the user "kumar" has an account
     When we login as existing user Kumar
@@ -27,7 +27,7 @@ Feature: Core Functionality - Smoke Test
     Then we can update the record to "test record 50"
     Then we can delete the last record
     Then The existing user can logout
-@skip
+
   Scenario: Tomek user can perform core functionality 4.
     Given the user "tomek" has an account
     When we login as existing user Tomek
@@ -36,7 +36,7 @@ Feature: Core Functionality - Smoke Test
     Then we can see his own records
     Then we can see his direct reportees records
     Then The existing user can logout
-@skip
+
   Scenario: Viet user can perform core functionality 5.
     Given the user "viet" has an account
     When we login as existing user Viet
@@ -45,7 +45,7 @@ Feature: Core Functionality - Smoke Test
     Then we can modify records of direct reportees
     Then we can not modify records of his peers
     Then The existing user can logout
-@skip
+
   Scenario: Xing user can perform core functionality 5.
     Given the user "xing" has an account
     When we login as existing user Xing

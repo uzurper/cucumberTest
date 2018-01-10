@@ -39,6 +39,9 @@ $ cucumber
 $ cucumber --format html --out report.html
 ```
 
-this will create a report.html file, which you can open with your favorite browser. An example is included in this repoistory.
+this will create a report.html file, which you can open with your favorite browser.
+```
+$ open report.html
+```
 
-- open report.html
+An example report.html is included in this repository.
