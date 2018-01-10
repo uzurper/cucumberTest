@@ -36,7 +36,7 @@ $ cucumber
 
 ## How to see test results:
 ```
-$ cucumber -f pretty -f html report.html
+$ cucumber --format html --out report.html
 ```
 
 this will create a report.html file, which you can open with your favorite browser. An example is included in this repoistory.
