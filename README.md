@@ -28,6 +28,7 @@ git clone https://github.com/uzurper/cucumberTest.git
 
 ## How to launch tests
 
+- update URL in `core_steps.rb` and `create_account_steps.rb` specifically line 4
 - change dirctory to `cucumberTest` and run from command line
 
 ```
