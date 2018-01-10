@@ -1,7 +1,7 @@
 require_relative 'site_element.rb'
 
 #define new browser
-browser = SiteElement.new("http://ec2-54-210-168-91.compute-1.amazonaws.com:8666/recruitment/records")
+browser = SiteElement.new("")
 
 Given(/^the user "(.*?)" has an account$/) do |username|
   browser.check_title
