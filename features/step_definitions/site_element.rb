@@ -159,24 +159,24 @@ class SiteElement
   end
 
   def update_xing_record()
-    # assuming viet sees xing's record as the fifth row in table
+    # assuming viet sees xing's record as the 12th row in table
     sleep 1
-    fifth_row = @driver.find_element(:xpath, "/html/body/div[2]/div[2]/div/div[6]/div/div/table/tbody/tr[1]/td/table/tbody/tr[6]/td[1]/input")
-    fifth_row.send_keys "abc123"
+    twelfth_row = @driver.find_element(:xpath, "/html/body/div[2]/div[2]/div/div[6]/div/div/table/tbody/tr[1]/td/table/tbody/tr[13]/td[2]/div")
+    twelfth_row.send_keys "abc123"
 
-    # assuming we can try click fifth save button
-    fifth_save_btn = @driver.find_element(:xpath, "/html/body/div[2]/div[2]/div/div[6]/div/div/table/tbody/tr[1]/td/table/tbody/tr[6]/td[3]/button")
-    fifth_save_btn.click
+    # assuming we can try click 12th save button
+    twelfth_save_btn = @driver.find_element(:xpath, "/html/body/div[2]/div[2]/div/div[6]/div/div/table/tbody/tr[1]/td/table/tbody/tr[13]/td[3]/button")
+    twelfth_save_btn.click
 
     #verify you see permission denied
     try_for(5) { expect(@driver.find_element(:xpath, "//div[contains(text(), 'permission denied')]")) }
   end
 
   def delete_viet_record()
-    # assuming xing see's viet's record as the sixth row in the table, we try to click sixth delete button
+    # assuming xing see's viet's record as the sixth row in the table, we try to click seventh delete button
     sleep 1
-    sixth_delete_btn = @driver.find_element(:xpath, "/html/body/div[2]/div[2]/div/div[6]/div/div/table/tbody/tr[1]/td/table/tbody/tr[7]/td[4]/button")
-    sixth_delete_btn.click
+    seventh_delete_btn = @driver.find_element(:xpath, "/html/body/div[2]/div[2]/div/div[6]/div/div/table/tbody/tr[1]/td/table/tbody/tr[8]/td[4]/button")
+    seventh_delete_btn.click
 
     #verify you see permission denied
     try_for(5) { expect(@driver.find_element(:xpath, "//div[contains(text(), 'permission denied')]")) }

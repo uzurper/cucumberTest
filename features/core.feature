@@ -45,7 +45,7 @@ Feature: Core Functionality - Smoke Test
     Then we can modify records of direct reportees
     Then we can not modify records of his peers
     Then The existing user can logout
-
+@important
   Scenario: Xing user can perform core functionality 5.
     Given the user "xing" has an account
     When we login as existing user Xing
